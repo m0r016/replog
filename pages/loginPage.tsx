@@ -1,39 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function loginPage() {
-  return (
-    <View style={loginPageStyles.loginPage}>
-      <Text style={loginPageStyles.Replog}>Replog</Text>
-      <View style={loginPageStyles.loginGroup}>
-        <View style={loginPageStyles.Rectangle3} />
-        <Text style={loginPageStyles.login}>ログイン</Text>
-        <Text style={loginPageStyles.registerIsThis}>新規登録はこちら</Text>
-      </View>
-      <View style={loginPageStyles.mailAddressGroup}>
-        <View style={loginPageStyles.Rectangle1} />
-        <Text style={loginPageStyles.mailAddress}>メールアドレス</Text>
-        <Text style={loginPageStyles.mailAddressPlaceholder}>
-          メールアドレスを入力してください
-        </Text>
-      </View>
-      <View style={loginPageStyles.passwordGroup}>
-        <View style={loginPageStyles.Rectangle2} />
-        <Text style={loginPageStyles.password}>パスワード</Text>
-        <Text style={loginPageStyles.passwordPlaceholder}>
-          パスワードを入力してください
-        </Text>
-        <View style={loginPageStyles.passwordInputSave}>
-          <View style={loginPageStyles.passwordInputSaveRectangle} />
-          <Text style={loginPageStyles.passwordInputSaveMessage}>
-            パスワードを保存する
-          </Text>
-        </View>
-      </View>
-    </View>
-  );
-}
-
 const loginPageStyles = StyleSheet.create({
   loginPage: {
     width: 24.38,
@@ -160,3 +127,36 @@ const loginPageStyles = StyleSheet.create({
     lineHeight: 0.88,
   },
 });
+
+export default function loginPage() {
+  return (
+    <View style={loginPageStyles.loginPage}>
+      <Text style={loginPageStyles.Replog}>Replog</Text>
+      <View style={loginPageStyles.loginGroup}>
+        <View style={loginPageStyles.Rectangle3} />
+        <Text style={loginPageStyles.login}>ログイン</Text>
+        <Text style={loginPageStyles.registerIsThis}>新規登録はこちら</Text>
+      </View>
+      <View style={loginPageStyles.mailAddressGroup}>
+        <View style={loginPageStyles.Rectangle1} />
+        <Text style={loginPageStyles.mailAddress}>メールアドレス</Text>
+        <Text style={loginPageStyles.mailAddressPlaceholder}>
+          メールアドレスを入力してください
+        </Text>
+      </View>
+      <View style={loginPageStyles.passwordGroup}>
+        <View style={loginPageStyles.Rectangle2} />
+        <Text style={loginPageStyles.password}>パスワード</Text>
+        <Text style={loginPageStyles.passwordPlaceholder}>
+          パスワードを入力してください
+        </Text>
+        <View style={loginPageStyles.passwordInputSave}>
+          <View style={loginPageStyles.passwordInputSaveRectangle} />
+          <Text style={loginPageStyles.passwordInputSaveMessage}>
+            パスワードを保存する
+          </Text>
+        </View>
+      </View>
+    </View>
+  );
+}
