@@ -1,5 +1,11 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, KeyboardAvoidingView } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  KeyboardAvoidingView,
+} from 'react-native';
 import { Svg } from 'react-native-svg';
 
 const newRegisterPageStyles = StyleSheet.create({
