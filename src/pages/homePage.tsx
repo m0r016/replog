@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 
 const HomePage = () => {
-    return (
-        <View>
-            <Text>ホーム画面</Text>
-        </View>
-    );
+  return (
+    <View>
+      <Text>HomePage</Text>
+    </View>
+  );
 };
 
 export default HomePage;
