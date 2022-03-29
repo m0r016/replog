@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
+import { Svg } from 'react-native-svg';
 
 const loginPageStyles = StyleSheet.create({
   loginPage: {
@@ -21,7 +22,7 @@ const loginPageStyles = StyleSheet.create({
     width: 16.69,
     height: 2.81,
   },
-  Rectangle3: {
+  loginButton: {
     width: 16.69,
     height: 1.88,
     backgroundColor: '#a6772d',
@@ -50,7 +51,7 @@ const loginPageStyles = StyleSheet.create({
     width: 16.69,
     height: 2.81,
   },
-  Rectangle1: {
+  mailAddressInputForm: {
     width: 16.69,
     height: 1.88,
     backgroundColor: '#ffffff',
@@ -80,7 +81,7 @@ const loginPageStyles = StyleSheet.create({
     width: 16.69,
     height: 3.94,
   },
-  Rectangle2: {
+  passwordInpuForm: {
     width: 16.69,
     height: 1.88,
     backgroundColor: '#ffffff',
@@ -133,19 +134,19 @@ export default function loginPage() {
     <View style={loginPageStyles.loginPage}>
       <Text style={loginPageStyles.Replog}>Replog</Text>
       <View style={loginPageStyles.loginGroup}>
-        <View style={loginPageStyles.Rectangle3} />
+        <View style={loginPageStyles.loginButton} />
         <Text style={loginPageStyles.login}>ログイン</Text>
         <Text style={loginPageStyles.registerIsThis}>新規登録はこちら</Text>
       </View>
       <View style={loginPageStyles.mailAddressGroup}>
-        <View style={loginPageStyles.Rectangle1} />
+        <View style={loginPageStyles.mailAddressInputForm} />
         <Text style={loginPageStyles.mailAddress}>メールアドレス</Text>
         <Text style={loginPageStyles.mailAddressPlaceholder}>
           メールアドレスを入力してください
         </Text>
       </View>
       <View style={loginPageStyles.passwordGroup}>
-        <View style={loginPageStyles.Rectangle2} />
+        <View style={loginPageStyles.passwordInpuForm} />
         <Text style={loginPageStyles.password}>パスワード</Text>
         <Text style={loginPageStyles.passwordPlaceholder}>
           パスワードを入力してください
