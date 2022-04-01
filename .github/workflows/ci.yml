@@ -15,17 +15,3 @@ jobs:
       run: npm ci
       - name: ESLint
       run: npm run lint
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: CheckOut
-      uses: actions/checkout@v2
-      - name: Set Node.js 17.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: "17.x"
-        cache: 'npm'
-      - name: Install packages
-      run: npm ci
-      - name: Test
-      run: npm run test
