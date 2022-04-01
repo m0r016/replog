@@ -9,7 +9,8 @@ const loginPageStyles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
   Replog: {
-    margin: '5.63 9.25',
+    marginLeft: '5.63',
+    marginTop: '9.25',
     width: 13.88,
     height: 6,
     color: '#a6772d',

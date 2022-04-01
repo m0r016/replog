@@ -5,6 +5,8 @@ import {
   Image,
   StyleSheet,
   KeyboardAvoidingView,
+  TextInput,
+  TouchableOpacity,
 } from 'react-native';
 import { Svg } from 'react-native-svg';
 
@@ -23,18 +25,18 @@ const newRegisterPageStyles = StyleSheet.create({
     fontSize: 4,
     lineHeight: 4.69,
   },
-  loginGroup: {
+  registerGroup: {
     margin: '3.81 30.06',
     width: 16.69,
     height: 1.88,
   },
-  loginButton: {
+  registerButton: {
     width: 16.69,
     height: 1.88,
     backgroundColor: '#a6772d',
     borderRadius: 0.31,
   },
-  login: {
+  register: {
     margin: '6.81 0.44',
     width: 3,
     height: 0.94,
@@ -167,19 +169,29 @@ export default function newRegisterPage() {
       style={newRegisterPageStyles.keyboardAvoidingViewStyle}>
       <View style={newRegisterPageStyles.newRegisterPage}>
         <Text style={newRegisterPageStyles.Replog}>Replog</Text>
-        <View style={newRegisterPageStyles.loginGroup}>
-          <View style={newRegisterPageStyles.loginButton} />
-          <Text style={newRegisterPageStyles.login}>ログイン</Text>
+        <View style={newRegisterPageStyles.registerGroup}>
+          <View style={newRegisterPageStyles.registerButton} />
+          <TouchableOpacity style={newRegisterPageStyles.registerButton} />
+          <Text style={newRegisterPageStyles.register}>登録</Text>
         </View>
         <View style={newRegisterPageStyles.mailAddressGroup}>
-          <View style={newRegisterPageStyles.mailAddressInputForm} />
+          <TextInput
+            style={newRegisterPageStyles.mailAddressInputForm}
+            autoCapitalize="none"
+            autoCorrect={false}
+          />
           <Text style={newRegisterPageStyles.mailAddress}>メールアドレス</Text>
           <Text style={newRegisterPageStyles.mailAddressPlessholder}>
             メールアドレスを入力してください
           </Text>
         </View>
         <View style={newRegisterPageStyles.idGroup}>
-          <View style={newRegisterPageStyles.idInputForm} />
+          <TextInput
+            style={newRegisterPageStyles.idInputForm}
+            placeholder="パスワードを入力してください"
+            secureTextEntry={true}
+            autoCapitalize="none"
+          />
           <Text style={newRegisterPageStyles.id}>ID</Text>
           <Text style={newRegisterPageStyles.idPlaceholder}>
             IDを入力してください
