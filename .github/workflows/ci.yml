@@ -14,14 +14,3 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run lint
-  Test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 17
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run test
