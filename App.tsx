@@ -11,7 +11,11 @@ export default function Replog() {
     <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="登録" component={newRegisterPage} />
+          <Stack.Screen
+            name="登録"
+            component={newRegisterPage}
+            options={{ headerShown: false }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
